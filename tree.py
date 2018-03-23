@@ -61,10 +61,10 @@ class DecisionTree:
         # Print the question at this node
         print(spacing + str(node.question))
 
-        # Call this function recursively on the true branch
+        # True branch
         print(spacing + '--> True:')
         self.print_tree(node.true_branch, spacing + "  ")
 
-        # Call this function recursively on the false branch
+        # False branch
         print(spacing + '--> False:')
         self.print_tree(node.false_branch, spacing + "  ")
